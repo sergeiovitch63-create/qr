@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- DESTINATION DU SLOT c003 — modifiable via le bot (/set c003 <lien>) ou ici -->
+  <meta http-equiv="refresh" content="0; url=https://example.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Redirection en cours...</title>
+  <script>
+    (function () {
+      var meta = document.querySelector('meta[http-equiv="refresh"]');
+      if (meta) { var m = meta.content.match(/url=(.+)/i); if (m) { window.location.replace(m[1].trim()); } }
+    })();
+  </script>
+  <style>body{font-family:system-ui,sans-serif;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#f5f5f5;color:#333}</style>
+</head>
+<body><p>Redirection en cours...</p></body>
+</html>
